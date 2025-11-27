@@ -43,8 +43,8 @@ int yylineno;
 ">"   { return GT; }
 "."   { return DOT; }
 
-"//".* { /* Ignorar comentarios linea */ }
-"/*"([^*]|(\*+[^*/]))*\*+"/" { /* Ignorar comentarios bloque */ }
+"//".* { /* Ignorar comentarios en linea */ }
+"/*"([^*]|(\*+[^*/]))*\*+"/" { /* Ignorar comentarios en bloque */ }
 
 [ \t\n]+    { /* Ignorar espacios */ }
 
