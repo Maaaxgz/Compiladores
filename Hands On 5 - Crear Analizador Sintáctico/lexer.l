@@ -1,8 +1,7 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include "parser.tab.h" /* Bison genera este archivo, aqui estan los tokens */
-
+#include "parser.tab.h" 
 int yylineno; 
 %}
 

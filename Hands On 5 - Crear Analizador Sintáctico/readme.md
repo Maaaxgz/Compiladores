@@ -30,7 +30,7 @@ Para construir el analizador desde cero, ejecute los siguientes comandos en orde
    ```
    flex lexer.l
    ```
-   Esto genera los archivos `lex.yy.c`.
+   Esto genera el archivo `lex.yy.c`.
 
 3. **Compilar el ejecutable**
    ```

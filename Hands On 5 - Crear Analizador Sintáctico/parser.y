@@ -15,7 +15,7 @@ void yyerror(const char *s);
 %token IDENTIFIER NUM_INT NUM_FLOAT LITERAL_STRING
 %token ASSIGN PLUS MINUS MULT DIV INCREMENT
 %token LPAREN RPAREN LBRACE RBRACE SEMICOLON COMMA HASH
-%token LT GT DOT /* Para los includes <stdlib.h> */
+%token LT GT DOT 
 
 /* Precedencia de operadores */
 %left PLUS MINUS
@@ -117,7 +117,7 @@ term:
 factor:
     LPAREN expression RPAREN
     | IDENTIFIER
-    | IDENTIFIER LPAREN args RPAREN /* Llamada a funcion (ej. print) */
+    | IDENTIFIER LPAREN args RPAREN 
     | NUM_INT
     | NUM_FLOAT
     ;
@@ -149,7 +149,7 @@ int main() {
         return 1;
     }
     
-    // Le decimos a Flex que lea del archivo
+    // Flex que lee el archivo
     extern FILE *yyin;
     yyin = input;
 
